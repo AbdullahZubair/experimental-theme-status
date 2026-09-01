@@ -1,0 +1,12 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+
+# Composer, only relevant if this module is ever tested on its own
+/vendor/
+composer.lock

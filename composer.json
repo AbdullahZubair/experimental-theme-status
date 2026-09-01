@@ -1,0 +1,20 @@
+{
+    "name": "abdullahzubair/experimental-theme-status",
+    "description": "Suppresses the status report warning for an experimental theme that is deliberately set as the site default or admin theme.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/AbdullahZubair/experimental-theme-status",
+    "support": {
+        "source": "https://github.com/AbdullahZubair/experimental-theme-status",
+        "issues": "https://github.com/AbdullahZubair/experimental-theme-status/issues"
+    },
+    "authors": [
+        {
+            "name": "Abdullah Zubair",
+            "email": "abdullahzubair2015@gmail.com"
+        }
+    ],
+    "require": {
+        "drupal/core": "^11.2"
+    }
+}
