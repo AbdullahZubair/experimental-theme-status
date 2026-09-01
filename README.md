@@ -55,7 +55,19 @@ introduced in that release.
 
 ## Installation
 
-Add this repository to your project's `composer.json`, then require it:
+This module is not on Packagist or drupal.org, so Composer does not know
+where to find it until you tell it. Run this once, from your project's
+root folder, to register this repository:
+
+```
+composer config repositories.experimental-theme-status vcs https://github.com/AbdullahZubair/experimental-theme-status
+```
+
+That adds an entry to your project's `composer.json` under
+`repositories`, pointing at this GitHub repository. You only need to do
+this once per project, not once per version.
+
+Then require and enable the module as usual:
 
 ```
 composer require abdullahzubair/experimental-theme-status
@@ -66,3 +78,18 @@ drush cr
 If you are not installing it through Composer, you can also place the
 module folder directly in `modules/custom/experimental_theme_status` and
 enable it the same way with `drush en`.
+
+## Verifying it works
+
+After enabling the module, a quick way to check it took effect:
+
+- Visit your site's status report at Reports > Status report. If your
+  active default or admin theme is experimental, the "Experimental
+  themes installed" warning should no longer appear.
+- If you have any other experimental theme installed but not set as
+  your default or admin theme, the warning should still appear,
+  mentioning that theme, since this module never hides a real
+  oversight.
+- Disable the module and reload the status report, the warning should
+  come back for your active theme, confirming the module was doing
+  something rather than the warning being gone for an unrelated reason.

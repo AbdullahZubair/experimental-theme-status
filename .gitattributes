@@ -1,0 +1,16 @@
+# Normalize line endings for all text files, regardless of the
+# committer's operating system.
+* text=auto eol=lf
+
+# Treat common binary assets as binary, not text, in case any are
+# added later, such as a module icon.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Keep these files out of what Composer installs.
+.gitattributes export-ignore
+.gitignore export-ignore
+.editorconfig export-ignore

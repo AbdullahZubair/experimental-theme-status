@@ -2,4 +2,4 @@ name: 'Experimental Theme Status'
 type: module
 description: 'Suppresses the status report warning for an experimental theme that is deliberately set as the site default or admin theme.'
 core_version_requirement: ^11.2
-version: '1.0.0'
+version: '1.0.1'
