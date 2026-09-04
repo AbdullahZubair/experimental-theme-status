@@ -10,7 +10,9 @@
 *.gif binary
 *.ico binary
 
-# Keep these files out of what Composer installs.
+# Keep these files out of what Composer installs. They are only useful to
+# someone developing this module, not to a site that depends on it.
 .gitattributes export-ignore
 .gitignore export-ignore
 .editorconfig export-ignore
+phpcs.xml.dist export-ignore
